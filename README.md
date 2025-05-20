@@ -23,38 +23,35 @@ Launch the app locally and open the provided URL in your browser to practice you
 
 ## Installation
 
-1. **Clone the repository**
+# Clone the repository
+git clone https://github.com/dreamer522/ai_interview.git
 
-```bash
-git clone https://github.com/yourusername/ai-interview-assistant.git
-cd ai-interview-assistant
-Create and activate a virtual environment (recommended)
+# Change directory into the project folder
+cd ai_interview
 
-bash
-Copy
-Edit
-python3 -m venv venv
-source venv/bin/activate   # On Windows: venv\Scripts\activate
-Install dependencies
+# Create a virtual environment (recommended)
+python -m venv venv
 
-bash
-Copy
-Edit
+# Activate the virtual environment
+# On Windows:
+venv\Scripts\activate
+
+# On macOS/Linux:
+# source venv/bin/activate
+
+# Install required dependencies
 pip install -r requirements.txt
+
 Set up environment variables
 
 Create a .env file in the project root containing your OpenAI API key:
 
-ini
-Copy
-Edit
+init
 OPENAI_API_KEY=your_openai_api_key_here
-Usage
+
 Run the app locally:
 
-bash
-Copy
-Edit
+#bash
 python app.py
 This will start a local Gradio server, and the terminal will display a link (e.g., http://127.0.0.1:7860) to access the interface in your browser.
 
